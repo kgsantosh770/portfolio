@@ -1,0 +1,32 @@
+.experience{
+    .company{
+        margin: 25px 0 10px;
+        cursor: pointer;
+        &.active{
+            background-color: $highlight-color;
+            color: $black-text-color;
+        }
+    }
+    .time-line {
+        margin: 0 10px;
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        background-color: $highlight-color;
+        &:last-child{
+            display: none;
+        }
+    }
+    .company-experience{
+        *{
+            margin-top: 25px;
+        }
+        .role{
+            @include medium-font;
+            font-weight: bold;
+        }
+        .tech-stack{
+            font-weight: bold;
+        }
+    }
+}

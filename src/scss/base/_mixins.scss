@@ -1,0 +1,26 @@
+@mixin heading-font {
+    font-size: 75px;
+    line-height: 120px;
+    font-weight: bold;
+}
+
+@mixin subheading-font {
+    font-size: 38px;
+    line-height: 47px;
+    font-weight: bold;
+}
+
+@mixin medium-font {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+@mixin normal-font {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+@mixin small-font {
+    font-size: 13px;
+    line-height: 22px;
+}

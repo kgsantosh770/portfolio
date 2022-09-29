@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $body-background;
+    color: $text-color;
+    @include normal-font;
+    font-family: $font-default;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.un {
+    display: inline-block;
+}
+
+.un:after {
+    content: "";
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: $highlight-color;
+    transition: 300ms;
+}
+
+.un:hover:after {
+    width: 100%;
+}
+
+.spacer {
+    margin: 18% 0;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid $highlight-color;
+    padding: 10px;
+    border-radius: 5px;
+    color: $highlight-color;
+}
+
+.pull-right {
+    margin-left: 15%;
+}

@@ -1,0 +1,25 @@
+.about{
+    margin-top: 100px;
+    scroll-margin-top: 167px;
+    max-width: 50%;
+
+    h1, h2, h3 {
+        margin: 0;
+    }
+
+    .name{
+        @include heading-font;
+    }
+
+    .interested-role{
+        @include subheading-font;
+        margin-bottom: 30px;
+    }
+
+    .hire-me-btn{
+        @include medium-font;
+        margin-top: 20px;
+        display: block;
+        width: max-content;
+    }
+}

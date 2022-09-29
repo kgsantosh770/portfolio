@@ -1,0 +1,40 @@
+nav {
+    padding: 21px 0;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: $body-background;
+    z-index: 2;
+    
+    .name-logo{
+        font-family: $font-code;
+        color: $highlight-color;
+    }
+    
+    .menu-item{
+        @include normal-font;
+        &:not(:last-child){
+            margin-right: 60px;
+        }
+        &:hover{
+            color: $highlight-color;
+            font-weight: 600;
+        }
+    }
+
+    .un{
+        &:hover:after{
+            width: 0;
+        }
+        &.active:after {
+            width: 100%;
+        }
+    }
+
+    .active {
+        color: $highlight-color;
+        font-weight: 600;
+    }
+
+}

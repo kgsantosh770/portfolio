@@ -1,0 +1,38 @@
+.contact-resume {
+    position: relative;
+}
+.contact {
+    scroll-margin-top: 167px;
+    width: 60%;
+    h2 {
+        @include subheading-font;
+    }
+    .btn {
+        @include medium-font;
+        display: block;
+        margin-top: 30px;
+        width: max-content;
+    }
+}
+
+.resume{
+    @include medium-font;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    right: 20px;
+    cursor: pointer;
+    .download-icon{
+        display: inline-block;
+        margin-left: 15px;
+    }
+    &:hover{
+        .download-icon{
+            transform: translateY(10%);
+            transform: 0.3s all ease-in-out;
+        }
+    }
+}

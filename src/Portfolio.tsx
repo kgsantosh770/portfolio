@@ -2,6 +2,7 @@ import Navbar from "./portfolio-components/Navbar";
 import About from "./portfolio-components/About";
 import Experience from "./portfolio-components/Experience";
 import Projects from "./portfolio-components/Projects";
+import Contact from "./portfolio-components/Contact";
 
 function Portfolio() {
   return (
@@ -13,6 +14,8 @@ function Portfolio() {
         <Experience />
         <div className="spacer"></div>
         <Projects />
+        <div className="spacer"></div>
+        <Contact />
         <div className="spacer"></div>
       </div>
     </div>

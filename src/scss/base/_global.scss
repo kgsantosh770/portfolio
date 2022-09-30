@@ -42,8 +42,17 @@ a {
     padding: 10px;
     border-radius: 5px;
     color: $highlight-color;
+    &:hover{
+        background-color: $hover-highlight-color;
+    }
 }
 
 .pull-right {
     margin-left: 15%;
+}
+
+.download-icon{
+    background: url("../../../public/download-icon.png") no-repeat;
+    width: 24px;
+    height: 24px;
 }

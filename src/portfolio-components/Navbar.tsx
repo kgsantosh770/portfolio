@@ -23,6 +23,7 @@ function Navbar() {
                 <a href="#projects" className="menu-item un menu-projects" onClick={()=>setActiveMenu("menu-projects")}>Projects</a>
                 {/* <a href="#resume" className="menu-item un menu-resume" onClick={()=>setActiveMenu("menu-resume")}>Resume</a> */}
                 <a href="#contact" className="menu-item un menu-contact" onClick={()=>setActiveMenu("menu-contact")}>Contact</a>
+                <a href="" className="btn">Resume</a>
             </div>
         </nav>
     )

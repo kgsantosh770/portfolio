@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PersonalData as data, PersonalData } from "../portfolio-data"
+import { PersonalData } from "../portfolio-data"
 
 interface WorkData {
     id: number,

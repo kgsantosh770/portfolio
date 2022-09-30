@@ -1,9 +1,10 @@
 .experience{
-    scroll-margin-top: 167px;
+    scroll-margin-top: 176px;
     h1{
         @include subheading-font;
     }
     .company{
+        @include medium-font;
         margin: 25px 0 10px;
         cursor: pointer;
         &.active{

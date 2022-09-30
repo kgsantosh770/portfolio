@@ -1,0 +1,87 @@
+.projects {
+    scroll-margin-top: 167px;
+    h1 {
+        @include subheading-font;
+        margin-bottom: 50px;
+    }
+    .project {
+        display: flex;
+        margin-bottom: 15%;
+        .project-img {
+            width: 45%;
+            height: 365px;
+            object-fit: cover;
+            filter: brightness(0.5);
+        }
+    }
+
+    .project:hover .project-img {
+        filter: brightness(0.7);
+    }
+
+    .flex-reverse {
+        flex-direction: row-reverse;
+        .project-details {
+            text-align: left;
+            .desc {
+                margin-left: 0;
+                margin-right: -10%;
+            }
+        }
+    }
+
+    .project-details {
+        width: 55%;
+        z-index: 2;
+        text-align: right;
+        h2{
+            margin: 0 0 30px 0;
+        }
+        .desc {
+            box-shadow: 0 10px 30px -15px $shadow-background;
+            background-color: $highlight-background;
+            padding: 20px 40px;
+            min-height: 110px;
+            text-align: justify;
+            display: flex;
+            align-items: center;
+            margin: 0 0 25px -10%;
+        }
+        .tech-stack {
+            margin-bottom: 25px;
+        }
+        .git-source{
+            display: block;
+        }
+    }
+
+    .small-projects{
+        h2{
+            text-align: center;
+        }
+    }
+
+    .small-project{
+        background-color: $highlight-background;
+        padding: 30px 40px;
+        margin: 0 auto 30px;
+        border-radius: 20px;
+        position: relative;
+        width: 60%;
+        h3{
+            margin: 0 0 10px 0;
+        }
+        .git-source{
+            color: $highlight-color;
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            svg {
+                fill: $text-color;
+            }
+            &:hover svg{
+                fill: $highlight-color;
+            }
+        }
+    }
+}

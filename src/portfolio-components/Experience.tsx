@@ -12,7 +12,6 @@ interface WorkData {
 
 function Experience() {
     const experienceData = PersonalData.experience;
-    console.log(experienceData)
     const [workData, setWorkData] = useState<WorkData>(experienceData[experienceData.length-1]);
 
     const handleCompanyButtonClick = (id: number) => {
@@ -22,16 +21,15 @@ function Experience() {
 
     const companyButtons = experienceData.map(company => {
         return (
-            <>
+            <div key={company.id}>
                 <button
-                    key={company.id}
                     className={`btn company ${workData.id === company.id ? "active" : ""}`}
                     onClick={() => handleCompanyButtonClick(company.id)}
                 >
                     {company.name}
                 </button>
                 <span className="time-line"></span>
-            </>
+            </div>
         )
     })
 

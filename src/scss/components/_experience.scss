@@ -1,4 +1,8 @@
 .experience{
+    scroll-margin-top: 167px;
+    h1{
+        @include subheading-font;
+    }
     .company{
         margin: 25px 0 10px;
         cursor: pointer;

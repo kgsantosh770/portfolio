@@ -1,6 +1,10 @@
 .portfolio {
     padding: 0 35px;
     .portfolio-content {
-        margin: 0 5%;
+        margin: 0 10%;
+    }
+    .about-techicons{
+        display: flex;
+        justify-content: space-between;
     }
 }

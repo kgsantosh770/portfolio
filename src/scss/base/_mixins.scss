@@ -1,26 +1,55 @@
 @mixin heading-font {
-    font-size: 75px;
-    line-height: 120px;
-    font-weight: bold;
+  font-size: 75px;
+  line-height: 120px;
+  font-weight: bold;
 }
 
 @mixin subheading-font {
-    font-size: 38px;
-    line-height: 47px;
-    font-weight: bold;
+  font-size: 38px;
+  line-height: 47px;
+  font-weight: bold;
 }
 
 @mixin medium-font {
-    font-size: 18px;
-    line-height: 25px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 @mixin normal-font {
-    font-size: 16px;
-    line-height: 23px;
+  font-size: 16px;
+  line-height: 23px;
 }
 
 @mixin small-font {
-    font-size: 13px;
-    line-height: 22px;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  width: $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
 }

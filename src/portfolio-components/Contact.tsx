@@ -12,12 +12,12 @@ function Contact() {
                     {PersonalData.contactButtonText}
                 </a>
             </div>
-            <button className="resume btn">
+            <a href={PersonalData.resumeDownloadLink} className="resume btn" download>
                 <span className="download-resume-text">
                     Download Resume 
                 </span>
                 <span className="download-icon"></span>
-            </button>
+            </a>
         </section>
     )
 }

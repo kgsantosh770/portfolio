@@ -1,4 +1,4 @@
-import {PersonalData as data} from "../portfolio-data"
+import {PersonalData} from "../portfolio-data"
 
 function Navbar() {
     function setActiveMenu(classname: string){
@@ -15,7 +15,7 @@ function Navbar() {
     return (
         <nav>
             <a href="#about" className="name-logo">
-                <span className="header-title">{data.name.logo}</span>
+                <span className="header-title">{PersonalData.name.logo}</span>
             </a>
             <div className="menu">
                 <a href="#about"className="menu-item un  menu-about-me active" onClick={()=>setActiveMenu("menu-about-me")}>About</a>
@@ -23,7 +23,7 @@ function Navbar() {
                 <a href="#projects" className="menu-item un menu-projects" onClick={()=>setActiveMenu("menu-projects")}>Projects</a>
                 {/* <a href="#resume" className="menu-item un menu-resume" onClick={()=>setActiveMenu("menu-resume")}>Resume</a> */}
                 <a href="#contact" className="menu-item un menu-contact" onClick={()=>setActiveMenu("menu-contact")}>Contact</a>
-                <a href="" className="btn">Resume</a>
+                <a href={PersonalData.resumeLink} className="btn">Resume</a>
             </div>
         </nav>
     )

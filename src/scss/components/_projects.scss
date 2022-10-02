@@ -4,13 +4,20 @@
         margin-bottom: 50px;
     }
     .project {
-        display: flex;
+        @media #{$desktop} {
+            display: flex;
+        }
         margin-bottom: 15%;
         .project-img {
             width: 45%;
             height: 365px;
             object-fit: cover;
             filter: brightness(0.5);
+            @media #{$mobile} {
+                width: 100%;
+                height: 200px;
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -23,8 +30,10 @@
         .project-details {
             text-align: left;
             .desc {
-                margin-left: 0;
-                margin-right: -10%;
+                margin: 0 -10% 25px 0;
+                @media #{$mobile} {
+                    margin-right: 0;
+                }
             }
         }
     }
@@ -33,6 +42,11 @@
         width: 55%;
         z-index: 2;
         text-align: right;
+        position: relative;
+        @media #{$mobile} {
+            width: 100%;
+            text-align: left;
+        }
         h2{
             margin: 0 0 30px 0;
         }
@@ -45,12 +59,27 @@
             display: flex;
             align-items: center;
             margin: 0 0 25px -10%;
+            @media #{$mobile} {
+                text-align: left;
+                margin-left: 0;
+                padding: 20px 16px;
+            }
         }
         .tech-stack {
             margin-bottom: 25px;
+            @media #{$mobile} {
+                width: 80%;
+            }
         }
         .git-source{
             display: block;
+            height: 30px;
+            width: 30px;
+            @media #{$mobile} {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
         }
     }
 
@@ -67,6 +96,10 @@
         border-radius: 20px;
         position: relative;
         width: 60%;
+        @media #{$mobile} {
+            width: unset;
+            margin-bottom: 20px;
+        }
         h3{
             margin: 0 0 10px 0;
         }

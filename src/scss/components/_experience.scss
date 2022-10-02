@@ -4,9 +4,6 @@
     }
     h1{
         @include subheading-font;
-        @media #{$mobile} {
-            @include medium-font;
-        }
     }
     .companies{
         display: flex;

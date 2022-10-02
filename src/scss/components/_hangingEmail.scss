@@ -1,17 +1,23 @@
 .hanging-email {
-    position: fixed;
-    right: 20px;
-    bottom: 0;
-    writing-mode: vertical-rl;
-    &::after {
-        content: "";
-        width: 2px;
-        height: 160px;
-        position: relative;
-        top: 20px;
-        right: 2px;
-        display: inline-block;
-        background-color: $text-color;
+    @media #{$desktop} {
+        position: fixed;
+        right: 20px;
+        bottom: 0;
+        writing-mode: vertical-rl;
+        &::after {
+            content: "";
+            width: 2px;
+            height: 160px;
+            position: relative;
+            top: 20px;
+            right: 2px;
+            display: inline-block;
+            background-color: $text-color;
+        }
+    }
+    @media #{$mobile} {
+        display: block;
+        text-align: center;
     }
     &:hover{
         color: $highlight-color;

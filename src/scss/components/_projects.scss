@@ -4,10 +4,12 @@
         margin-bottom: 50px;
     }
     .project {
-        @media #{$desktop} {
-            display: flex;
-        }
+        display: flex;
         margin-bottom: 15%;
+        @media #{$mobile} {
+            display: inherit;
+            margin-bottom: 25%;
+        }
         .project-img {
             width: 45%;
             height: 365px;

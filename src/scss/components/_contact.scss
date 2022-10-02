@@ -18,6 +18,9 @@
         display: block;
         margin-top: 30px;
         width: max-content;
+        @media #{$mobile} {
+            margin: 30px auto 0;
+        }
     }
 }
 

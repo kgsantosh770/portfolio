@@ -49,7 +49,7 @@ function Experience() {
     )
 
     return (
-        <section id="experience" className="experience pull-right">
+        <section id="experience" className="experience">
             <h1>Work Experience</h1>
             <div className="companies">
                 {companyButtons}

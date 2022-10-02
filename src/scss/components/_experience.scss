@@ -1,10 +1,23 @@
 .experience{
+    @media #{$desktop} {
+        margin-left: 15%;
+    }
     h1{
         @include subheading-font;
+        @media #{$mobile} {
+            @include medium-font;
+        }
+    }
+    .companies{
+        display: flex;
     }
     .company{
         @include medium-font;
         margin: 25px 0 10px;
+        @media #{$mobile} {
+            @include normal-font;
+            margin-top: 0;
+        }
         cursor: pointer;
         &.active{
             background-color: $highlight-color;
@@ -26,7 +39,9 @@
             margin-top: 25px;
         }
         .role{
-            @include medium-font;
+            @media #{$desktop} {
+                @include medium-font;
+            }
             font-weight: bold;
         }
         .tech-stack{

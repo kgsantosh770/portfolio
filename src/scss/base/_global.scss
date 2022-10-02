@@ -8,9 +8,6 @@ body {
     @include normal-font;
     font-family: $font-default;
     margin: 0;
-    @media #{$mobile} {
-        @include medium-font;
-    }
 }
 
 a {
@@ -48,10 +45,6 @@ a {
     &:hover{
         background-color: $hover-highlight-color;
     }
-}
-
-.pull-right {
-    margin-left: 15%;
 }
 
 .download-icon{

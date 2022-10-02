@@ -2,9 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media #{$mobile} {
+        flex-direction: column-reverse;
+    }
 }
 .contact {
-    width: 60%;
+    @media #{$desktop} {
+        width: 60%;
+    }
     h2 {
         @include subheading-font;
     }
@@ -16,21 +21,26 @@
     }
 }
 
-.resume{
+.resume {
     @include medium-font;
     padding: 20px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     cursor: pointer;
-    .download-icon{
+    .download-icon {
         display: inline-block;
         margin-left: 15px;
     }
-    &:hover{
-        .download-icon{
-            transform: translateY(10%);
-            transform: 0.3s all ease-in-out;
+    @media #{$desktop} {
+        &:hover {
+            .download-icon {
+                transform: translateY(10%);
+                transform: 0.3s all ease-in-out;
+            }
         }
+    }
+    @media #{$mobile} {
+        margin-top: 15%;
     }
 }

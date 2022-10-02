@@ -4,12 +4,19 @@
     .portfolio-content {
         margin: 0 10%;
     }
-    .about-techicons{
+    .about-techicons {
         display: flex;
         justify-content: space-between;
+        scroll-margin-top: 185px;
     }
 
-    .about-techicons, .experience, .projects, .contact-resume {
+    .experience,
+    .projects,
+    .contact-resume {
+        padding-top: 18%;
+    }
+
+    .contact-resume {
         margin-bottom: 18%;
     }
 }

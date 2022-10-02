@@ -12,10 +12,10 @@ function Portfolio() {
     <div className="portfolio">
       <Navbar />
       <div className="portfolio-content">
-        <div className="about-techicons">
+        <section className="about-techicons" id="about">
           <About />
           <TechIconsBox />
-        </div>
+        </section>
         <Experience />
         <Projects />
         <Contact />

@@ -6,24 +6,29 @@ nav {
     top: 0;
     background-color: $body-background;
     z-index: 3;
-    
-    .name-logo{
+
+    .name-logo {
         font-family: $font-code;
         color: $highlight-color;
     }
-    
-    .menu-item{
-        &:not(:last-child){
+
+    ul {
+        list-style-type: none;
+        display: inherit;
+        li:not(:last-child) {
             margin-right: 25px;
         }
-        &:hover{
+    }
+
+    .menu-item {
+        &:hover {
             color: $highlight-color;
             font-weight: 600;
         }
     }
 
-    .un{
-        &:hover:after{
+    .un {
+        &:hover:after {
             width: 0;
         }
         &.active:after {
@@ -35,5 +40,4 @@ nav {
         color: $highlight-color;
         font-weight: 600;
     }
-
 }

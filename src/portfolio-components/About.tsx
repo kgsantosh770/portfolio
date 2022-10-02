@@ -2,7 +2,7 @@ import {PersonalData as data} from "../portfolio-data"
 
 function About() {
     return (
-        <section id="about" className="about">
+        <div className="about">
             <h3>{data.welcomeNote}</h3>
             <h1 className="name">
                 {
@@ -16,7 +16,7 @@ function About() {
                 {data.aboutMe}
             </div>
             <a href="#contact" className="btn hire-me-btn">Hire me</a>
-        </section>
+        </div>
     )
 }
 

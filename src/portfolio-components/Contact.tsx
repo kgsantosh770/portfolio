@@ -2,8 +2,8 @@ import { PersonalData } from "../portfolio-data"
 
 function Contact() {
     return (
-        <section className="contact-resume">
-            <div id="contact" className="contact">
+        <section className="contact-resume" id="contact">
+            <div className="contact">
                 <h2>{PersonalData.contactTitle}</h2>
                 <div className="contact-note">
                     {PersonalData.contactNote}

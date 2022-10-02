@@ -1,8 +1,13 @@
 .portfolio {
     padding: 0 40px;
+    @media #{$mobile} {
+        padding: 0 21px;
+    }
     position: relative;
     .portfolio-content {
-        margin: 0 10%;
+        @media #{$desktop} {
+            margin: 0 10%;
+        }
     }
     .about-techicons {
         display: flex;

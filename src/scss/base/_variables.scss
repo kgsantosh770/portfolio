@@ -12,3 +12,6 @@ $highlight-color: #64ffda;
 
 $font-code: 'Press Start 2P', cursive;
 $font-default:  'Roboto Mono', monospace;
+
+$desktop: "screen and (min-width: 992px)";
+$mobile: "screen and (max-width: 991px)";

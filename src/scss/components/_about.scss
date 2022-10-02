@@ -1,17 +1,29 @@
 .about{
     margin-top: 70px;
-    max-width: 50%;
+    
+    @media #{$desktop} {
+        max-width: 50%;
+    }
 
     h1, h2, h3 {
         margin: 0;
+        @media #{$mobile} {
+            margin: 0 0 15px;
+        }
     }
 
     .name{
         @include heading-font;
+        @media #{$mobile} {
+            @include subheading-font;
+        }
     }
 
     .interested-role{
         @include subheading-font;
+        @media #{$mobile} {
+            @include medium-font;
+        }
         margin-bottom: 30px;
     }
 

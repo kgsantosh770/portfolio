@@ -10,17 +10,17 @@ import HangingSocialMedia from "./portfolio-components/HangingSocialMedia";
 function Portfolio() {
   return (
     <div className="portfolio">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="portfolio-content">
         <section className="about-techicons" id="about">
           <About />
           <TechIconsBox />
         </section>
-        <Experience />
+        {/* <Experience />
         <Projects />
         <Contact />
         <HangingEmail />
-        <HangingSocialMedia />
+        <HangingSocialMedia /> */}
       </div>
     </div>
   );

@@ -1,10 +1,15 @@
 .portfolio {
-    padding: 0 35px;
+    padding: 0 40px;
+    position: relative;
     .portfolio-content {
         margin: 0 10%;
     }
     .about-techicons{
         display: flex;
         justify-content: space-between;
+    }
+
+    .about-techicons, .experience, .projects, .contact-resume {
+        margin-bottom: 18%;
     }
 }

@@ -13,9 +13,8 @@ nav {
     }
     
     .menu-item{
-        @include normal-font;
         &:not(:last-child){
-            margin-right: 60px;
+            margin-right: 25px;
         }
         &:hover{
             color: $highlight-color;

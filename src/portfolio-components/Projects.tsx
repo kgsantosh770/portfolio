@@ -7,7 +7,7 @@ function Projects() {
 
     const projects = projectData.map(project => {
         return (
-            <div className={`project ${project.id % 2 === 0 ? "flex-reverse" : ""}`}>
+            <div className={`project ${project.id % 2 === 0 ? "flex-reverse" : ""}`} key={project.id}>
                 <img src={project.image} alt="" className="project-img" />
                 <div className="project-details">
                     <h2>{project.name}</h2>
@@ -25,7 +25,7 @@ function Projects() {
 
     const smallProjects = smallProjectData.map(project => {
         return (
-            <div className="small-project">
+            <div className="small-project" key={project.id}>
                 <h3>{project.name}</h3>
                 <div className="tech-stack">
                     {project.techStack}

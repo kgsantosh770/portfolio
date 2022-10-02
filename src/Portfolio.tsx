@@ -4,6 +4,8 @@ import Experience from "./portfolio-components/Experience";
 import Projects from "./portfolio-components/Projects";
 import Contact from "./portfolio-components/Contact";
 import TechIconsBox from "./portfolio-components/TechIconsBox";
+import HangingEmail from "./portfolio-components/HangingEmail";
+import HangingSocialMedia from "./portfolio-components/HangingSocialMedia";
 
 function Portfolio() {
   return (
@@ -14,13 +16,11 @@ function Portfolio() {
           <About />
           <TechIconsBox />
         </div>
-        <div className="spacer"></div>
         <Experience />
-        <div className="spacer"></div>
         <Projects />
-        <div className="spacer"></div>
         <Contact />
-        <div className="spacer"></div>
+        <HangingEmail />
+        <HangingSocialMedia />
       </div>
     </div>
   );

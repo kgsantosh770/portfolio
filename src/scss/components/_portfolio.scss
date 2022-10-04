@@ -1,9 +1,10 @@
 .portfolio {
     padding: 0 40px;
+    max-width: 2000px;
+    margin: 0 auto;
     @media #{$mobile} {
-        padding: 0 21px;
+        padding: 0 26px;
     }
-    position: relative;
     .portfolio-content {
         @media #{$desktop} {
             margin: 0 10%;

@@ -1,4 +1,3 @@
-import RoundedBox from "./RoundedBox";
 import { PersonalData } from "../portfolio-data";
 
 function Projects() {
@@ -15,7 +14,7 @@ function Projects() {
                     <div className="tech-stack">
                         {project.techStack}
                     </div>
-                    <a href={project.gitUrl} target="_blank" className="git-source">
+                    <a href={project.gitUrl} target="_blank"  rel="noreferrer" className="git-source">
                         <img src="./git-cat.png" alt="git-source-url" />
                     </a>
                 </div>
@@ -30,7 +29,7 @@ function Projects() {
                 <div className="tech-stack">
                     {project.techStack}
                 </div>
-                <a href={project.gitUrl} target="_blank" className="git-source">
+                <a href={project.gitUrl} target="_blank"  rel="noreferrer" className="git-source">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px" height="24px">
                         <g id="surface323815947">
                             <path style={{ stroke: "none", fillRule:"nonzero"}} d="M 19 21 L 5 21 C 3.898438 21 3 20.101562 3 19 L 3 5 C 3 3.898438 3.898438 3 5 3 L 12 3 L 12 5 L 5 5 L 5 19 L 19 19 L 19 12 L 21 12 L 21 19 C 21 20.101562 20.101562 21 19 21 Z M 19 21 " />

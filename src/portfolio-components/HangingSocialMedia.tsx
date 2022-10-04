@@ -5,7 +5,7 @@ function HangingSocialMedia() {
 
     const socialIcons = socialMedias.map((socialMedia, index) =>
         <li key={index}>
-            <a href={socialMedia.url} target="_blank">
+            <a href={socialMedia.url} target="_blank" rel="noreferrer">
                 <img src={socialMedia.icon} alt={socialMedia.name} title={socialMedia.name} />
             </a>
         </li>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {PersonalData} from "../portfolio-data";
 
 function TechIconsBox() {

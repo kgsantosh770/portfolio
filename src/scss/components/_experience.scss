@@ -8,7 +8,12 @@
     .companies{
         display: flex;
     }
-    .company{
+    .company:last-child{
+        .time-line{
+            display: none
+        }
+    }
+    .company-name{
         @include medium-font;
         margin: 25px 0 10px;
         @media #{$mobile} {
@@ -27,9 +32,9 @@
         width: 50px;
         height: 2px;
         background-color: $highlight-color;
-        &:last-child{
-            display: none;
-        }
+        // &:last-child{
+        //     display: none;
+        // }
     }
     .company-experience{
         *{

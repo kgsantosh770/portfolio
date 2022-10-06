@@ -21,9 +21,9 @@ function Experience() {
 
     const companyButtons = experienceData.map(company => {
         return (
-            <div key={company.id}>
+            <div key={company.id} className="company">
                 <button
-                    className={`btn company ${workData.id === company.id ? "active" : ""}`}
+                    className={`btn company-name ${workData.id === company.id ? "active" : ""}`}
                     onClick={() => handleCompanyButtonClick(company.id)}
                 >
                     {company.name}

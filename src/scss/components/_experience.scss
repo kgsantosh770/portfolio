@@ -18,7 +18,7 @@
         margin: 25px 0 10px;
         @media #{$mobile} {
             @include normal-font;
-            margin-top: 0;
+            margin: 0 10px 10px 0;
         }
         cursor: pointer;
         &.active{
@@ -32,9 +32,9 @@
         width: 50px;
         height: 2px;
         background-color: $highlight-color;
-        // &:last-child{
-        //     display: none;
-        // }
+        @media #{$mobile} {
+            display: none;
+        }
     }
     .company-experience{
         *{

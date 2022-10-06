@@ -12,7 +12,7 @@ interface WorkData {
 
 function Experience() {
     const experienceData = PersonalData.experience;
-    const [workData, setWorkData] = useState<WorkData>(experienceData[experienceData.length-1]);
+    const [workData, setWorkData] = useState<WorkData>(experienceData[0]);
 
     const handleCompanyButtonClick = (id: number) => {
         const company = experienceData.find(company => company.id === id)

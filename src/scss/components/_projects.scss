@@ -37,6 +37,9 @@
                     margin-right: 0;
                 }
             }
+            .git-source{
+                float: left;
+            }
         }
     }
 
@@ -78,6 +81,7 @@
             display: block;
             height: 30px;
             width: 30px;
+            float: right;
             @media #{$mobile} {
                 position: absolute;
                 bottom: 0;
